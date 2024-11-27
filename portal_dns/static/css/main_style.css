@@ -1,0 +1,134 @@
+@import url('pagination.css');
+@import url('searcher.css');
+
+
+.main_container {
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    max-width: 100%; /* Максимальная ширина */
+    margin: 0 auto;     /* Центрирование */
+    padding: 0px;     /* Внутренние отступы */
+    background-color: #6A5ACD;
+    border: 1px solid black;
+}
+
+.site-header {  /* Стили шапки */
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    display: flex; /* Используем флексбокс для создания колонок */
+    flex-direction: row
+    align-items: stretch; /* Выравниваем содержимое по вертикали */
+    top: 0; /* Прижимаем её к верхней части окна */
+    width: 100%; /* Растягиваем шапку на всю ширину */
+    height: 40%; /* Фиксируем высоту */
+    /*background-color: #EE4D5F ;  Фон шапки  #DCDCDC */
+    background-image: linear-gradient(rebeccapurple, teal);
+    /*padding: 3px 0px;  Внешние отступы */
+    border: 1px solid black; /* Граница для наглядности */
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    /*position: fixed;  Фиксируем шапку */
+}
+
+.header-left { /* Левая часть шапки */
+    flex: 1;
+    text-align: center; /* Текст по центру */
+    border: 1px solid black;
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    /*background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);*/
+    background-image: url('../images/logo_sun_2.png');
+    background-size: contain; /* Масштабировать, сохраняя пропорции */
+    background-repeat: no-repeat; /* Убрать повторение */
+    background-position: left; /* Центрирование фонового изображения */
+    /* background-size: cover; /* Растянуть, чтобы покрыть блок */
+    /* background-size: 100px 50px; /* Ширина и высота */
+}
+
+.header-center { /* Средняя часть шапки */
+    flex: 1;
+    width: 20%;
+    height: 20%;
+    text-align: center; /* Текст по центру */
+    font-size: 10px; /* Размер текста */
+    font-weight: bold; /* Полужирный текст */
+    border: 1px solid black;
+}
+
+.header-right { /* Правая часть шапки */
+    flex: 1;
+    display: flex; /* Это нужно для выравнивания контента, если есть текст */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    background-image: url('../images/dns_portal_logo.png');
+    background-size: contain; /* Масштабировать, сохраняя пропорции */
+    background-repeat: no-repeat; /* Убрать повторение */
+    background-position: center; /* Центрирование фонового изображения */
+    border: 1px solid black;
+}
+
+.top_nav_container {
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    /* top | right | bottom | left */
+    margin: 1px 1px 1px 1px;
+    padding: 1px; /* Поля вокруг текста */
+    background-color: #008B8B;
+    border: 1px solid black;
+    width: auto;
+
+}
+
+
+
+
+
+
+
+
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row
+    /* gap: 10px; /* Отступы между колонками */
+}
+
+nav {
+    flex: 1; /* Левая панель */
+    border: 1px solid black;
+    width: 20%;
+
+}
+
+main {
+    flex: 2; /* Центральный контент */
+    border: 1px solid black;
+
+}
+
+aside {
+    flex: 1; /* Правая панель */
+    border: 1px solid black;
+
+}
+
+
+
+
+/*======================================================================================== */
+
+.logo {
+  height: 80px; /* Высота изображения */
+  width: 80px; /* Пропорциональная ширина */
+
+}
+
+
+.linear-gradient {
+  background-image: linear-gradient(rebeccapurple, teal);
+}
+
+.radial-gradient {
+  background-image: radial-gradient(teal, rebeccapurple);
+}
+
+.conic-gradient {
+  background-image: conic-gradient(rebeccapurple, teal, green, blue, purple);
+}
+

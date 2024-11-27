@@ -1,0 +1,13 @@
+.env
+.idea/*.*
+/.idea/*.*
+.venv/*.*
+/.venv/*.*
+/.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/profiles_settings.xml
+db.sqlite3
+*.tar
+dockerfile
+
+/.idea/inspectionProfiles/Project_Default.xml
+/portal_dns/templates/tmp.html
