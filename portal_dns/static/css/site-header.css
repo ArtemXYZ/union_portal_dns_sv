@@ -1,0 +1,52 @@
+.site-header {  /* Стили шапки */
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    display: flex; /* Используем флексбокс для создания колонок */
+    flex-direction: row;
+    align-items: stretch; /* Выравниваем содержимое по вертикали */
+    top: 0; /* Прижимаем её к верхней части окна */
+    width: 100%; /* Растягиваем шапку на всю ширину */
+    height: 40%; /* Фиксируем высоту */
+    /*background-color: #EE4D5F ;  Фон шапки  #DCDCDC */
+    background-image: linear-gradient(rebeccapurple, teal);
+    /*padding: 3px 0px;  Внешние отступы */
+    /* border: 1px solid black;  */
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    /*position: fixed;  Фиксируем шапку */
+}
+
+.header-right { /* Левая часть шапки */
+    flex: 0.5;
+    height: 55px;
+    text-align: center; /* Текст по центру */
+    /* border: 1px solid black;  */
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    /*background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);*/
+
+    /*background-image: url('../images/logo_sun_3.png'); */
+    background-size: contain; /* Масштабировать, сохраняя пропорции */
+    background-repeat: no-repeat; /* Убрать повторение */
+    background-position: center; /* Центрирование фонового изображения */
+    /* background-size: cover; /* Растянуть, чтобы покрыть блок */
+    /* background-size: 100px 50px; /* Ширина и высота */
+}
+
+.header-center { /* Средняя часть шапки */
+    flex: 1;
+    text-align: center; /* Текст по центру */
+    font-size: 10px; /* Размер текста */
+    font-weight: bold; /* Полужирный текст */
+    /* border: 1px solid black;  */
+}
+
+.header-left { /* Правая часть шапки */
+    flex: 0.5;
+    display: flex; /* Это нужно для выравнивания контента, если есть текст */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    background-image: url('../images/dns_portal_logo.png');
+    background-size: contain; /* Масштабировать, сохраняя пропорции */
+    background-repeat: no-repeat; /* Убрать повторение */
+    background-position: center; /* Центрирование фонового изображения */
+/* border: 1px solid black;  */
+}

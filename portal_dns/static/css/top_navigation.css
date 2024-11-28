@@ -1,13 +1,12 @@
 
-
 .top_nav_container {
     display: flex;
     flex-direction: row;
 
     /* top | right | bottom | left */
-    margin: 1px 1px 1px 1px;
+    margin: 2px 1px 2px 1px;
     background-color: #008B8B;
-    border: 1px solid black;
+    /* border: 1px solid black;  */
     height: 24px; /* Фиксируем высоту */
     font-size: 0px; /* Размер текста */
     /*align-items: stretch; /* Выравниваем содержимое по вертикали */
@@ -16,10 +15,9 @@
 
 }
 
-
 .top_nav-left-path { /* Правая часть шапки */
     /* border: 1px solid black; */
-    flex: 1;
+    flex: 0.5;
     display: flex;
     align-items: center; /* Центрирование содержимого по вертикали */
     justify-content: center; /* Центрирование содержимого по горизонтали */
@@ -35,7 +33,7 @@
 }
 
 .top_nav-right-path { /* Правая часть шапки */
-    flex: 1;
+    flex: 0.5;
     display: flex;
     justify-content: center; /* Центрирование содержимого по горизонтали */
     align-items: center; /* Центрирование содержимого по вертикали */
