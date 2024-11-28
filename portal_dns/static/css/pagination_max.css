@@ -1,0 +1,105 @@
+/* Определяем переменные для пагинации */
+:root {
+    --pagination-color: #0d6efd;
+    --pagination-bg: #fff;
+    --pagination-border: #dee2e6;
+    --pagination-hover-bg: #e9ecef;
+    --pagination-hover-color: #0a58ca;
+    --pagination-focus-shadow: rgba(13, 110, 253, 0.25);
+    --pagination-disabled-color: #6c757d;
+    --pagination-active-bg: #0d6efd;
+    --pagination-active-color: #fff;
+    --pagination-border-radius-sm: 0.2rem;
+    --pagination-border-radius-lg: 0.3rem;
+    --pagination-padding-sm: 0.25rem 0.5rem;
+    --pagination-padding-lg: 0.75rem 1.5rem;
+}
+
+/* Навигация по страницам */
+.pagination {
+    border: 1px solid black;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: -1px;
+}
+
+.page-link {
+    padding: 0.375rem 0.75rem;
+    position: relative;
+    display: block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-decoration: none;
+    color: var(--pagination-color);
+    border: 1px solid var(--pagination-border);
+    background-color: var(--pagination-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-link {
+        transition: none;
+    }
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: var(--pagination-hover-color);
+    border-color: var(--pagination-border);
+    background-color: var(--pagination-hover-bg);
+}
+
+.page-link:focus {
+    z-index: 3;
+    color: var(--pagination-hover-color);
+    outline: 0;
+    background-color: var(--pagination-hover-bg);
+    box-shadow: 0 0 0 0.25rem var(--pagination-focus-shadow);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: var(--pagination-active-color);
+    border-color: var(--pagination-active-bg);
+    background-color: var(--pagination-active-bg);
+}
+
+.page-item.disabled .page-link {
+    pointer-events: none;
+    color: var(--pagination-disabled-color);
+    border-color: var(--pagination-border);
+    background-color: var(--pagination-bg);
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.pagination-lg .page-link {
+    font-size: 1.25rem;
+    padding: var(--pagination-padding-lg);
+}
+
+.pagination-lg .page-item:first-child .page-link,
+.pagination-lg .page-item:last-child .page-link {
+    border-radius: var(--pagination-border-radius-lg);
+}
+
+.pagination-sm .page-link {
+    font-size: 0.875rem;
+    padding: var(--pagination-padding-sm);
+}
+
+.pagination-sm .page-item:first-child .page-link,
+.pagination-sm .page-item:last-child .page-link {
+    border-radius: var(--pagination-border-radius-sm);
+}

@@ -1,6 +1,6 @@
-@import url('pagination.css');
+@import url('pagination_min.css');
 @import url('searcher.css');
-
+@import url('top_navigation.css');
 
 .main_container {
     box-sizing: border-box; /* Включаем отступы внутрь элемента */
@@ -14,7 +14,7 @@
 .site-header {  /* Стили шапки */
     box-sizing: border-box; /* Включаем отступы внутрь элемента */
     display: flex; /* Используем флексбокс для создания колонок */
-    flex-direction: row
+    flex-direction: row;
     align-items: stretch; /* Выравниваем содержимое по вертикали */
     top: 0; /* Прижимаем её к верхней части окна */
     width: 100%; /* Растягиваем шапку на всю ширину */
@@ -43,8 +43,6 @@
 
 .header-center { /* Средняя часть шапки */
     flex: 1;
-    width: 20%;
-    height: 20%;
     text-align: center; /* Текст по центру */
     font-size: 10px; /* Размер текста */
     font-weight: bold; /* Полужирный текст */
@@ -64,16 +62,8 @@
     border: 1px solid black;
 }
 
-.top_nav_container {
-    box-sizing: border-box; /* Включаем отступы внутрь элемента */
-    /* top | right | bottom | left */
-    margin: 1px 1px 1px 1px;
-    padding: 1px; /* Поля вокруг текста */
-    background-color: #008B8B;
-    border: 1px solid black;
-    width: auto;
 
-}
+
 
 
 
