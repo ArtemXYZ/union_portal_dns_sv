@@ -10,4 +10,4 @@ db.sqlite3
 dockerfile
 
 /.idea/inspectionProfiles/Project_Default.xml
-/portal_dns/templates/tmp.html
+/portal_dns/old/tmp.html

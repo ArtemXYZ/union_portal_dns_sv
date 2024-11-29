@@ -1,5 +1,5 @@
 
-.top_nav_container {
+.top-nav-container {
     display: flex;
     flex-direction: row;
 
@@ -15,7 +15,7 @@
 
 }
 
-.top_nav-left-path { /* Правая часть шапки */
+.top-nav-left-path { /* Правая часть шапки */
     /* border: 1px solid black; */
     flex: 0.5;
     display: flex;
@@ -25,7 +25,7 @@
 
 }
 
-.top_nav-center-path { /* Правая часть шапки */
+.top-nav-center-path { /* Правая часть шапки */
       /* border: 1px solid black; */
     flex: 1;
     display: flex;
@@ -34,7 +34,7 @@
 
 }
 
-.top_nav-right-path { /* Правая часть шапки */
+.top-nav-right-path { /* Правая часть шапки */
     flex: 0.5;
     display: flex;
     justify-content: center; /* Центрирование содержимого по горизонтали */

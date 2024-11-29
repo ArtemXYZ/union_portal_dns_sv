@@ -1,30 +1,21 @@
-:root {
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
+
+/*  Левая панель (левый навигатор) */
+nav {
+    flex: 0.8;
+    margin: 0 0 0 0;
+
+
+    min-width: 320px;
 }
 
-.list-group {
-    display: flex;
-    flex-direction: column; /* Вертикальное направление */
-    padding-left: 0;
-    margin: 0;
-    list-style: none; /* Убираем маркеры списка */
-}
 
-.list-group-item {
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: teal;
-    border: 1px solid rgba(0, 0, 0, 0.125); /* Лёгкая граница */
-    background-color: #fff;
-    font-size: 1rem;
-    text-align: center; /* Центрируем текст */
-    width: 100%; /* Элемент занимает всю ширину контейнера */
-    box-sizing: border-box; /* Учитываем границы и отступы */
-}
 
-.list-group-item.active {
-    color: #fff;
-    border-color: teal;
+
+/* ==========================
     background-color: teal;
-}
+
+    margin: 2px 0px 2px 0px; /* top | right | bottom | left
+    flex: 0.8;
+        display: flex;
+            border: 1px solid blac
+*/

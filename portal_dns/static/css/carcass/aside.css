@@ -1,4 +1,4 @@
 aside {
-    flex: 1; /* Правая панель */
+    flex: 0.8; /* Правая панель */
     border: 1px solid black;
 }
