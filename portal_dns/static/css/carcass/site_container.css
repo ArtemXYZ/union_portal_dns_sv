@@ -1,0 +1,21 @@
+.site_container {
+    background-color: #B0C4DE; /* #6A5ACD #9370DB #B0C4DE*/
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0px;     /* Внутренние отступы */
+
+}
+
+
+
+
+/*
+border: 1px solid black;
+margin: 0;     /* Центрирование
+
+
+*/
+
