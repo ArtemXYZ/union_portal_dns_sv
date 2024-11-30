@@ -1,0 +1,96 @@
+
+
+
+
+
+/*  Контейнер под заголовок в колонках .content  */
+.content-header {
+    display: flex;
+    margin: 0 ;
+    background-color: #008B8B;
+    height: 32px;
+    width: 100%;
+    flex-direction: row;
+
+
+
+
+
+
+
+.content-header-left-path { /* Правая часть шапки */
+    /* border: 1px solid black; */
+
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    flex: 0.3;
+    display: flex;
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    padding: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; /* Центрируем текст */
+
+}
+
+.content-header-center-path { /* Правая часть шапки */
+
+    box-sizing: border-box; /* Включаем отступы внутрь элемента*/
+    flex: 1;
+    display: flex;
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    padding: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; /* Центрируем текст */
+
+}
+
+.content-header-right-path { /* Правая часть шапки */
+
+    box-sizing: border-box; /* Включаем отступы внутрь элемента */
+    flex: 0.3;
+    display: flex;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+
+    padding: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; /* Центрируем текст
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Контейнер под заголовок в колонках .content
+.column-header {
+    background-color: #008B8B  ; /*  rgb(1 160 160)  #008B8B #FF7F50  teal  rgb(127 127 127) SlateGray PaleVioletRed
+    /* border: 1px solid rgb(106 118 134);
+
+    margin: 0 0 3px 0;
+
+    height: 32px;
+    width: 100%;
+
+    box-sizing: border-box; /* Включаем отступы внутрь элемента
+    padding: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; /* Центрируем текст
+
+
+}
+*/

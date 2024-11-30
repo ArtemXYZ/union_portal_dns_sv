@@ -3,8 +3,9 @@
 nav {
     flex: 0.8;
     margin: 0 0 0 0;
+   /* box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);  /* Лёгкая тень */
 
-
+    border-right: 2px solid SlateGray; /*rgb(106 118 134);*/
     min-width: 320px;
 }
 

@@ -6,8 +6,9 @@
     /* top | right | bottom | left */
     margin: 2px 0px 2px 0px;
     background-color: #008B8B;
-    /* border: 1px solid black;  */
-    height: 32px; /* Фиксируем высоту */
+    /* border: 1px solid black;
+      border-bottom: 2px solid rgb(106 118 134); */
+    height: 40px; /* Фиксируем высоту */
     font-size: 0px; /* Размер текста */
     /*align-items: stretch; /* Выравниваем содержимое по вертикали */
    /* width: auto;*/
@@ -17,10 +18,12 @@
 
 .top-nav-left-path { /* Правая часть шапки */
     /* border: 1px solid black; */
-    flex: 0.5;
+    flex: 0.3;
     display: flex;
     align-items: center; /* Центрирование содержимого по вертикали */
     justify-content: center; /* Центрирование содержимого по горизонтали */
+
+
 
 
 }
@@ -35,8 +38,9 @@
 }
 
 .top-nav-right-path { /* Правая часть шапки */
-    flex: 0.5;
+    flex: 0.3;
     display: flex;
     justify-content: center; /* Центрирование содержимого по горизонтали */
     align-items: center; /* Центрирование содержимого по вертикали */
+
 }

@@ -1,4 +1,8 @@
 aside {
     flex: 0.8; /* Правая панель */
-    border: 1px solid black;
+    /*box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);  /* Лёгкая тень */
+    border-left: 2px solid SlateGray; /*rgb(106 118 134);*/
+
 }
+
+/* Правая панель  border: 1px solid black; */

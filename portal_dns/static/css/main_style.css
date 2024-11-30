@@ -1,5 +1,7 @@
 @import url('./carcass/site_header.css');
 @import url('./carcass/top_navigation.css');
+@import url('./carcass/content_header.css');
+
 @import url('./carcass/left_navigation.css');
 
 
@@ -27,6 +29,11 @@ body {
 /* Главный контейнер тела страницы (без шапки, навигатора и подвала) */
 .content {
     background-color: #E6E6FA;  /* #6A5ACD #9370DB #B0C4DE  #FF7F50 */
+   /* border-top: 3px solid rgb(106 118 134);
+    border-bottom: 2px solid rgb(106 118 134);
+    border-left: 2px solid rgb(106 118 134);
+    border-right: 2px solid rgb(106 118 134);*/
+
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -35,18 +42,7 @@ body {
 }
 
 
-/*  Контейнер под заголовок в колонках .content  */
-.column-header {
-    background-color: #FF7F50;
-    margin: 0px 0 3px 0;
-    height: 32px;
-    box-sizing: border-box; /* Включаем отступы внутрь элемента */
-    padding: 5px;
-    font-size: 1rem;
-    color: #fff;
-    text-align: center; /* Центрируем текст */
 
-}
 
 
 
@@ -59,5 +55,7 @@ body {
     /*border:  1px solid black;
     border: 0 0 2px 0 solid black;
     border:  1px solid black;
+
+     background-image: linear-gradient(#6EE2F5, #6454F0);
 */
 

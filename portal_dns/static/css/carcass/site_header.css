@@ -5,7 +5,7 @@
     align-items: stretch; /* Выравниваем содержимое по вертикали */
     top: 0; /* Прижимаем её к верхней части окна */
     width: 100%; /* Растягиваем шапку на всю ширину */
-    height: 90px; /* Фиксируем высоту */
+    height: 100px; /* Фиксируем высоту */
     background-image: linear-gradient(rebeccapurple, teal);
     /*box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);   Лёгкая тень */
     /*padding: 3px 0px;  Внешние отступы */
@@ -13,13 +13,16 @@
     /*position: fixed;  Фиксируем шапку */
 }
 
-.header-right { /* Левая часть шапки */
-    flex: 0.7;
+.header-right { /* Правая часть шапки */
+    flex: 0.3;
     display: flex;
     text-align: center; /* Текст по центру */
     /* border: 1px solid black;  */
     box-sizing: border-box; /* Включаем отступы внутрь элемента */
     /*background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);*/
+
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
 
     /*background-image: url('../images/logo_sun_3.png'); */
     background-size: contain; /* Масштабировать, сохраняя пропорции */
@@ -27,6 +30,7 @@
     background-position: center; /* Центрирование фонового изображения */
     /* background-size: cover; /* Растянуть, чтобы покрыть блок */
     /* background-size: 100px 50px; /* Ширина и высота */
+
 }
 
 .header-center { /* Средняя часть шапки */
@@ -45,7 +49,7 @@
     align-items: center; /* Центрирование содержимого по вертикали */
     justify-content: center; /* Центрирование содержимого по горизонтали */
 
-    background-image: url('..../images/dns_portal_logo.png');
+    background-image: url('/static/images/dns_portal_logo.png');
     background-size: contain; /* Масштабировать, сохраняя пропорции */
     background-repeat: no-repeat; /* Убрать повторение */
     background-position: center; /* Центрирование фонового изображения */

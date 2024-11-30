@@ -11,7 +11,7 @@
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: teal;
-    border: 1px solid rgba(0, 0, 0, 0.125); /* Лёгкая граница */
+    /*border: 1px solid rgba(0, 0, 0, 0.125); /* Лёгкая граница */
     background-color: #fff;
     font-size: 1rem;
     text-align: center; /* Центрируем текст */
@@ -21,8 +21,8 @@
 
 .list-group-item.active {
     color: #fff;
-    border-color: teal;
-    background-color: teal;
+    /*border-color: #FF7F50;*/
+    background-color: PaleVioletRed  ; /* teal #FF7F50 MediumPurple  DeepSkyBlue */
 }
 
  /* ------------- Анимация при наведении на элементы */
@@ -30,8 +30,8 @@
 .list-group-item:focus {
     z-index: 1;
     text-decoration: none;
-    color: rebeccapurple; /* Цвет текста при наведении */
-    background-color:  teal ; /* Цвет фона при наведении */
+    color: #fff  ; /* Цвет текста при наведении #FF7F50 */
+    background-color: PaleVioletRed  ; /* Цвет фона при наведении  MediumPurple #FF7F50 rebeccapurple DarkCyan */
 }
 
 
@@ -39,5 +39,5 @@
 .list-group-item-action {
     width: 100%;
     text-align: inherit;
-    color: #495057;
+    color: #fff ; /* #495057 MediumPurple  */
 }
