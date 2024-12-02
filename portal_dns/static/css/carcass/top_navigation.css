@@ -8,20 +8,24 @@
     background-color: #008B8B;
     /* border: 1px solid black;
       border-bottom: 2px solid rgb(106 118 134); */
-    height: 40px; /* Фиксируем высоту */
-    font-size: 0px; /* Размер текста */
+    height: 4%; /* Фиксируем высоту 40px  */
+    font-size: 0px; /* Размер текста 0px */
     /*align-items: stretch; /* Выравниваем содержимое по вертикали */
    /* width: auto;*/
     /* box-sizing: border-box; Включаем отступы внутрь элемента */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
 
 }
 
 .top-nav-left-path { /* Правая часть шапки */
-    /* border: 1px solid black; */
-    flex: 0.3;
+    /* border: 1px solid black; flex: 0.28; */
+
+
     display: flex;
     align-items: center; /* Центрирование содержимого по вертикали */
     justify-content: center; /* Центрирование содержимого по горизонтали */
+    width: 20%;
 
 
 
@@ -38,9 +42,11 @@
 }
 
 .top-nav-right-path { /* Правая часть шапки */
-    flex: 0.3;
+     /*flex: 0.28;*/
     display: flex;
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    align-items: center; /* Центрирование содержимого по вертикали */
 
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    width: 20%;
 }

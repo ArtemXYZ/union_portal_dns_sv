@@ -10,7 +10,7 @@
 @import url('./carcass/aside.css');
 @import url('./carcass/footer.css');
 
-
+@import url('./elements/registration_forms.css');
 @import url('./elements/pagination_min.css');
 @import url('./elements/searcher.css');
 @import url('./elements/list-group.css');

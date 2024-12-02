@@ -5,17 +5,23 @@
     padding-left: 0;
     margin: 0;
     list-style: none; /* Убираем маркеры списка */
+
+
 }
 
 .list-group-item {
-    padding: 0.5rem 1rem;
+    display: flex;
+    border-bottom: 1px solid #008B8B;
+    padding: 0.4rem 1rem;
+    /* top | right | bottom | left */
+    margin: 3px 5px 1px 5px;
     text-decoration: none;
     color: teal;
     /*border: 1px solid rgba(0, 0, 0, 0.125); /* Лёгкая граница */
-    background-color: #fff;
+    background-color: #fff  ; /*  SlateGray */
     font-size: 1rem;
-    text-align: center; /* Центрируем текст */
-    width: 100%; /* Элемент занимает всю ширину контейнера */
+    text-align: left; /* Центрируем текст */
+    width: stretch; /* Элемент занимает всю ширину контейнера */
     box-sizing: border-box; /* Учитываем границы и отступы */
 }
 

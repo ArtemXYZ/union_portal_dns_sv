@@ -1,12 +1,15 @@
 
 /*  Левая панель (левый навигатор) */
 nav {
-    flex: 0.8;
+    /*flex: 0.8;*/
     margin: 0 0 0 0;
    /* box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);  /* Лёгкая тень */
 
     border-right: 2px solid SlateGray; /*rgb(106 118 134);*/
-    min-width: 320px;
+
+    width: 20% ;
+
+     /*background-color: rgb(213 213 247);    rgb(213 213 247)+ SlateGray SlateGray CadetBlue  rgb(238 238 252)*/
 }
 
 

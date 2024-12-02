@@ -1,12 +1,16 @@
 footer {
-    background: SlateGray;
+    background-color:;
+
     height: 40px;
     margin: 2px 0; /* top | right | bottom | left */
 
   	color: #dbdbdb;
   	font-size: 10px;
     padding: 10px 10px;
-
+    /*
+    SlateGray  background-image: linear-gradient(teal, SlateGray) #B0C4DE DimGray CadetBlue;
+       background-color: #B0C4DE   #626064 ;
+    */
 }
 
 

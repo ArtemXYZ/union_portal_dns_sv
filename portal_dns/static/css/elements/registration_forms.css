@@ -1,0 +1,64 @@
+/* Контейнер для формы регистрации */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: auto;
+    /* top | right | bottom | left */
+    margin: 3px 4px 3px 4px;
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    border-top: 1px solid #008B8B;
+    border-bottom: 1px solid #008B8B;
+    /*background-color: #008B8B; border: 1px solid black; */
+}
+
+/* Строки-секции в форме регистрации (типовая секция для вмещения в нее других элементов)*/
+.form-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 12%;
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+    margin: 2px 0px 2px 0px;  /* Отступы внешней границы */
+    padding: 2px 0px 2px 0px;   /* Отступы внутренних границы */
+
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+
+}
+
+.input-registration-form {
+    font-size: 1rem;   /*12pt;*/
+    padding: .375em .75em;  /* высота / ширина */
+    border-radius: .25em;
+    color: teal;
+    width: 25%; /* От родительского размера */
+    border: 1px solid #008B8B;
+    background-color: #fff;
+
+    appearance: none;
+
+    /* style | variant | weight | stretch | основной текст/высота строки | family
+
+    | condensed | -
+    | variant |: small-caps - прописные или все заглавные,
+    | weight |:  bolder - полужирный ,
+    | stretch  font-stretch: ultra-expanded;  condensed; expanded; 50%;
+    | family | - проверяет его наличие на компьютере пользователя, Если такого шрифта нет, берётся следующее имя из списка;
+
+    */
+
+}
+
+.input-registration-form:focus {
+    outline: none;
+    border-color: PaleVioletRed;
+    box-shadow: 0 0 0 0.2em rgba(219, 112, 147, 0.25);
+}
+
+
+
+/* input-frame-code */

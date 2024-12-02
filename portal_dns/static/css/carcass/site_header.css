@@ -2,10 +2,11 @@
     box-sizing: border-box; /* Включаем отступы внутрь элемента */
     display: flex; /* Используем флексбокс для создания колонок */
     flex-direction: row;
-    align-items: stretch; /* Выравниваем содержимое по вертикали */
+    /* align-items: stretch; Выравниваем содержимое по вертикали */
     top: 0; /* Прижимаем её к верхней части окна */
+    height: 10%; /* Фиксируем высоту */
     width: 100%; /* Растягиваем шапку на всю ширину */
-    height: 100px; /* Фиксируем высоту */
+
     background-image: linear-gradient(rebeccapurple, teal);
     /*box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);   Лёгкая тень */
     /*padding: 3px 0px;  Внешние отступы */
