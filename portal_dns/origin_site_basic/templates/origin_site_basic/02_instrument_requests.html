@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- django_bootstrap5 -->
+    <title>UNION PORTAL DNS SV</title>
+    {% load static %}   <!--    /portal_dns/templates/-->
+    <link rel="stylesheet" href="{% static 'origin_site_basic/css/main_style.css' %}">
+    <!--    <link rel="stylesheet" href="./css/main_style.css"> &lt;!&ndash; Подключение файла стилей &ndash;&gt;-->
+</head>
+    <body>
+
+        <div class="site-container"> <!-- контейнер  -->
+
+            <header class="site-header"> <!-- Шапка -->
+                <div class="header-left"> <!-- Левая часть -->
+                    <!--                <img src="{% static 'images/logo_sun.png' %}" width=200 height=200 alt='DNS'>-->
+        <!--                <p>Заглушка</p>-->
+                </div>
+
+                <div class="header-center"> <!-- Средняя часть -->
+        <!--                <p>Заглушка</p>-->
+                </div>
+
+                <div class="header-right"> <!-- Правая часть -->
+<!--                    <form class="d-flex">-->
+<!--                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                           <button class="btn btn-outline-success" type="submit">Search</button>-->
+
+<!--                    </form>-->
+                </div>
+            </header>
+
+            <div class="top-nav-container">
+                 <div class="top-nav-left-path ">
+
+                 </div>
+                 <div class="top-nav-center-path">
+
+                 </div>
+
+                <!--  Правая часть топ-навигатора -->
+                <div class="top-nav-right-path">
+
+<!--                      Поисковик -->
+                    <form class="search-form">
+                           <input class="input-decoration" type="search" placeholder="Search" aria-label="Search">
+                           <button class="btn" type="submit">Search</button>
+                    </form>
+
+                </div>
+
+             </div>
+
+<!--            <div class="content-header">-->
+<!--               <div class="content-header-left-path">-->
+<!--                    Навигатор-->
+<!--                </div>-->
+<!--               <div class="content-header-center-path">-->
+<!--                    ЗАГОЛОВОК-->
+<!--                </div>-->
+<!--               <div class="content-header-right-path">-->
+<!--                    Панель информации-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+
+            <div class="content"> <!-- Главный контейнер тела страницы (без шапки, навигатора и подвала)-->
+
+                    <nav>
+<!--                        <div class="column-header">-->
+<!--                            Навигатор-->
+<!--                        </div>-->
+
+                        <ul class="list-group">
+                            {% for link in data_links %}
+                                {% if request.path == link.key %}
+                                    <li class="list-group-item active" aria-current="true">
+                                        <a href="{{ link.key }}">{{ link.value }}</a>
+                                    </li>
+
+                                {% else %}
+                                    <li class="list-group-item">
+                                        <a href="{{link.key}}">{{link.value}}</a>
+                                    </li>
+                                    {% endif %}
+                            {% endfor %}
+                        </ul>
+
+                    </nav>
+
+                    <main>
+                        <!-- Шапка-заголовок для контента-->
+                        <div class="column-header-main">
+<!--                            <ul class="pagination">-->
+
+<!--                                <li class="page-item disabled">-->
+<!--                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>-->
+<!--                                </li>-->
+
+<!--                                <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+
+<!--                                <li class="page-item active" aria-current="page">-->
+<!--                                    <a class="page-link" href="#">2</a>-->
+<!--                                </li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link" href="#">Next</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+
+                        </div>
+
+
+                        <!-- Оформление всей формы -->
+                        <form class="registration-form">
+
+                            <div class="form-row">
+                                <!-- Рамка для поля ввода--> <!-- aria-label="Search"  id="inputEmail3"-->
+                                <input class="input-registration-form" type="text" placeholder="code">
+
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Рамка для поля ввода--> <!-- aria-label="Search"  id="inputEmail3"-->
+                                <input class="input-registration-form" type="password" placeholder="password" id="inputPassword3">
+
+                            </div>
+
+                            <div class="form-row">
+                                 <!-- Кнопка отправки данных формы -->
+                                <button type="submit" class="btn">sign in</button>
+
+                            </div>
+
+
+
+                        </form>
+
+
+
+
+
+
+
+
+
+
+                    </main> <!--<p>Основной контент страницы...</p>-->
+
+                    <aside>
+<!--                        <div class="column-header">-->
+<!--                            Панель информации-->
+<!--                        </div>-->
+
+
+
+
+                    </aside>
+
+            </div>
+
+            <footer>
+
+                <div class="footer-group">
+                <!-- Здесь будет доп инфо                           -->
+                </div>
+
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

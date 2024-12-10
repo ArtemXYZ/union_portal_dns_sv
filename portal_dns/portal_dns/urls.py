@@ -16,18 +16,41 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_1.views import APItest
 
-# from portal_dns.app_1.views import index_p
 
-from app_1.views import  check_reg_form  # index_p,
+from origin_site_basic import views
+# from portal_dns.origin_site_basic.views import index_p
+
+from origin_site_basic.views import check_reg_form  # index_p,
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('', index_p),  # name='index'
-    path('api/v1/users_data/', APItest.as_view()),
-    path('', check_reg_form),  # Связываем путь с функцией представления  , name='check_reg_form'
+    # Страницы
+    # path('admin/', admin.site.urls),
+    path('', views.index, name='start_verification'),  # name='index'
+
+    path('<str:template_name>/', views.site_map, name='site_map'),  # карта сайта
+
+
+
+
+    path('01_instrument_price_tags.html/', views.price_tags_instrument, name='price_tags_instrument'),
+    # name - алиас в джанго для указания точной ссылки
+    path('02_instrument_requests.html/', views.instrument_requests, name='requests_instrument'),
+
+    # path('01_instrument_price_tags.html/', views.price_tags_instrument, name='price_tags_instrument'),
+    # path('01_instrument_price_tags.html/', views.price_tags_instrument, name='price_tags_instrument'),
+
+
+
+
+    # Другое
+    # path('api/v1/users_data/', views.APItest.as_view()),
+    # path('', check_reg_form),  # Связываем путь с функцией представления  , name='check_reg_form'
+
+
     # path('admin/', admin.site.urls),
     # path('', include('frontend.urls')),
+
+    # path('api/links/', get_site_map_links, name='get_site_map_links'),  # Django REST Framework
 ]

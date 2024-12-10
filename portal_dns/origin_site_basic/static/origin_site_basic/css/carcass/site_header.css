@@ -50,7 +50,7 @@
     align-items: center; /* Центрирование содержимого по вертикали */
     justify-content: center; /* Центрирование содержимого по горизонтали */
 
-    background-image: url('/static/images/dns_portal_logo.png');
+    background-image: url('../../images/dns_portal_logo.png');
     background-size: contain; /* Масштабировать, сохраняя пропорции */
     background-repeat: no-repeat; /* Убрать повторение */
     background-position: center; /* Центрирование фонового изображения */

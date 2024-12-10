@@ -15,6 +15,7 @@ from django.conf import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# print(BASE_DIR) \union_portal_sv\portal_dns
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_bootstrap5',
     'rest_framework',
-    'app_1',
+    'origin_site_basic',
 
 ]
 
@@ -61,7 +62,10 @@ ROOT_URLCONF = 'portal_dns.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', ],  # 'static'
+        # 'DIRS': ['../origin_site_basic/templates/origin_site_basic/',],
+        'DIRS': [os.path.join(BASE_DIR, 'origin_site_basic', 'templates', 'origin_site_basic')],  #
+
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +127,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "origin_site_basic/static")]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, STATIC_URL)] \union_portal_sv\portal_dns + /origin_site_basic/statick
+
+
+
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

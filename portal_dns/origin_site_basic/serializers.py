@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 
 # _________________________________________
-from app_1.models import Users
+from origin_site_basic.models import Users
 
 
 class UsersSerializer(ModelSerializer):
